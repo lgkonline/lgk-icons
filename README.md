@@ -1,0 +1,2 @@
+# lgk-icons
+Icon library
