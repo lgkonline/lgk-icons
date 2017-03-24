@@ -1,0 +1,80 @@
+$brand-primary: #333333;
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: darken($brand-primary, 10%);
+    cursor: default;
+}
+
+code {
+    cursor: text;
+}
+
+#top {
+    min-height: 100vh;
+}
+
+header {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: $white;
+    color: $brand-primary;
+    text-transform: uppercase;
+}
+
+#code-section {
+    background-color: lighten($brand-primary, 10%);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#search-section {
+    background-color: $brand-primary;
+    padding: 2rem 0;
+}
+
+#icons-section {
+    padding-top: 2rem;
+}
+
+.icon-card {
+    text-align: center;
+    height: 9rem;
+    margin-bottom: 2rem;
+
+    .card-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.icon-preview {
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.animation-spin {
+    display: inline-block;
+    animation: spinAnimation 1s infinite linear;
+}
+
+@keyframes spinAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+
+#lgkLogo {
+    text-decoration: none;
+    font-size: 2em;
+    color: #db5344;
+    transition: color .5s;
+}
+#lgkLogo:focus, #lgkLogo:hover {
+    color: #e37a6f;
+}
