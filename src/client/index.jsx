@@ -23,10 +23,6 @@ class App extends React.Component {
             .get("https://lib.lgkonline.com/lgk-icons/selection.json")
             .end((error, response) => {
                 if (error) throw error;
-
-                console.log(response);
-                console.log(response.body);
-
                 this.setState({icons: response.body.icons});
             });
     }
